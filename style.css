@@ -23,6 +23,7 @@ header {
     align-items: center;
 }
 
+
 .icones_esquerda{
     cursor: pointer;
 }
@@ -30,10 +31,6 @@ header {
 .icone_lupa {
     height: 30px;
     margin-right: 50px;
-}
-
-.icone_location {
-    height: 30px;
 }
 
 .icones_direita{
@@ -46,30 +43,16 @@ header {
     margin-right: 40px;
 }
 
-.icone_compras{
-    height: 30px;
-}
-
-.container_link{
-    display: flex;
-}
-
 nav a{
     font-family: "Tangerine", cursive;
     text-decoration: none;
     color: #000000;
     font-size: 30px;
 }
-/* .icone_user{
-    height: 30px;
-}
 
-.icone_compras{
-    height: 30px;
-    position: absolute;
-    left: 810px;
-    top: 34px;
-} */
+.container_direita{
+    position: relative;
+}
 
 
 
