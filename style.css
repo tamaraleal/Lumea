@@ -24,7 +24,6 @@ header {
 }
 
 .icones_esquerda{
-    /* background-color: aquamarine; */
     cursor: pointer;
 }
 
@@ -51,8 +50,16 @@ header {
     height: 30px;
 }
 
+.container_link{
+    display: flex;
+}
 
-
+nav a{
+    font-family: "Tangerine", cursive;
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+}
 /* .icone_user{
     height: 30px;
 }
