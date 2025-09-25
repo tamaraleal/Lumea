@@ -10,7 +10,7 @@ body {
 
 header {
     background-color: #95BCEA;
-    height: 100px;
+    height: 120px;
 }
 
 .container_cabecalho {
@@ -20,27 +20,27 @@ header {
     width: 1440px;
     margin: 0 auto;
     height: 100%;
-    align-items: center;
-}
-
-
-.icones_esquerda {
-    cursor: pointer;
+    align-items: end;
 }
 
 .icone_lupa {
-    height: 30px;
-}
-
-.icones_direita {
-    /* background-color: aquamarine; */
     cursor: pointer;
+    height: 30px;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 15px;
 }
 
 .icone_user {
+    cursor: pointer;
     height: 30px;
     display: flex;
-    justify-self: flex-end;
+    justify-self: center;
+    margin-bottom: 15px;
+}
+
+.menu {
+    display: none;
 }
 
 nav a {
@@ -50,9 +50,24 @@ nav a {
     font-size: 30px;
 }
 
+.container_direita {
+    display: flex;
+    gap: 40px;
+
+}
+
+.container_esquerda {
+    display: flex;
+    gap: 40px;
+}
+
+.logo {
+    width: 110px;
+}
+
 .banner {
     margin-top: 50px;
-    background-image: url(./assets/header-skincare-01.jpg);
+    background-image: url(./assets/image\ 3.png);
     width: 60%;
     aspect-ratio: 3.2;
     background-repeat: no-repeat;
@@ -127,11 +142,66 @@ nav a {
     width: 60%;
 }
 
+.creme {
+    margin-top: 100px;
+}
+
 .card p {
     font-size: 18px;
     width: 90%;
+    font-family: "Raleway Dots", sans-serif;
 }
 
-.card h2{
-     font-family: "Bona Nova SC", serif;
+.card h2 {
+    font-family: "Bona Nova SC", serif;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #95BCEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+}
+
+.redes_sociais {
+    display: flex;
+    justify-self: flex-end;
+    position: relative;
+}
+
+@media screen and (max-width:1108px) {
+    .icone_user {
+        display: none;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .cab_col1 {
+        display: flex;
+        align-self: center;
+    }
+
+    .menu {
+        display: inline-block;
+        width: 35px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .banner {
+        width: 350px;
+    }
 }
