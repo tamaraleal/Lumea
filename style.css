@@ -24,50 +24,114 @@ header {
 }
 
 
-.icones_esquerda{
+.icones_esquerda {
     cursor: pointer;
 }
 
 .icone_lupa {
     height: 30px;
-    margin-right: 50px;
 }
 
-.icones_direita{
+.icones_direita {
     /* background-color: aquamarine; */
     cursor: pointer;
 }
 
 .icone_user {
     height: 30px;
-    margin-right: 40px;
+    display: flex;
+    justify-self: flex-end;
 }
 
-nav a{
+nav a {
     font-family: "Tangerine", cursive;
     text-decoration: none;
     color: #000000;
     font-size: 30px;
 }
 
-.container_direita{
-    position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* .banner {
+.banner {
+    margin-top: 50px;
     background-image: url(./assets/header-skincare-01.jpg);
-    width: 100%;
+    width: 60%;
     aspect-ratio: 3.2;
     background-repeat: no-repeat;
     background-size: cover;
-} */
+    border-radius: 30px;
+    display: flex;
+    justify-self: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    /* background-color: blueviolet; */
+}
+
+.titulo span {
+    font-size: 48px;
+    font-family: "Tangerine", cursive;
+}
+
+.titulo hr {
+    background-color: #95BCEA;
+    width: 300px;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+}
+
+.acessivel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: #E6EFFA;
+    border-radius: 30px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 4px 2px #00000025;
+}
+
+.card img {
+    width: 60%;
+}
+
+.card p {
+    font-size: 18px;
+    width: 90%;
+}
+
+.card h2{
+     font-family: "Bona Nova SC", serif;
+}
