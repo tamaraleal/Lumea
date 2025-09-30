@@ -23,7 +23,7 @@ header {
     align-items: end;
 }
 
-.lumea_logo{
+.lumea_logo {
     width: 110px;
 }
 
@@ -58,13 +58,13 @@ nav a {
     font-size: 30px;
 }
 
-.container_esquerda{
+.container_esquerda {
     display: flex;
     gap: 40px;
 }
 
 
-.container_direita{
+.container_direita {
     display: flex;
     gap: 40px;
 }
@@ -132,18 +132,21 @@ nav a {
     background-color: #E6EFFA;
     border-radius: 30px;
     text-align: center;
+    font-family: "Bona Nova SC", serif;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     margin-bottom: 100px;
     box-shadow: 0 4px 4px 2px #00000025;
+    border: solid 2px #95BCEA;
 }
 
-.card img{
-    height: 280px;
+
+.card img {
+    height: 245px;
     width: 180px;
     margin-top: 30px;
 }
@@ -151,22 +154,21 @@ nav a {
 .card p {
     font-size: 18px;
     width: 90%;
-     font-family: "Raleway Dots", sans-serif;
+    font-family: "Raleway Dots", sans-serif;
+    font-weight: 900;
+    padding-bottom: 50px;
 }
 
-.card h2{
-     font-family: "Bona Nova SC", serif;
+.card h2 {
+    font-family: "Bona Nova SC", serif;
+    padding-top: 30px;
 }
 
-.rimel{
+.rimel {
     height: 143.19px;
     width: 65.57px;
     margin-top: 30px;
 }
-
-
-
-
 
 
 
@@ -178,10 +180,66 @@ footer {
     background-color: #95BCEA;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 footer p {
     font-family: "Bona Nova SC", serif;
     text-align: center;
 }
+
+/* RODAPÉ */
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #95BCEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+}
+
+.redes_sociais {
+    display: flex;
+    justify-self: flex-end;
+    position: relative;
+}
+
+@media screen and (max-width:1108px) {
+    .icone_user {
+        display: none;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .cab_col1 {
+        display: flex;
+        align-self: center;
+    }
+
+    .menu {
+        display: inline-block;
+        width: 35px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .banner {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 823px) {
+    .redes_sociais {
+        display: none;
+    }
+}
+
