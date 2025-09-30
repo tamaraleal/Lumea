@@ -39,7 +39,7 @@ header {
 }
 
 .logo {
-  margin-right: 663px;
+    margin-right: 663px;
 }
 
 .acessivel {
@@ -71,7 +71,6 @@ header {
     margin-top: 100px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     align-items: end;
 }
 
@@ -90,16 +89,17 @@ header {
     justify-content: space-between;
     width: 90%;
     max-width: 1440px;
-    /* background-color: aquamarine; */
+
+
 }
 
 .cadastro_coluna1 {
-    /* background-color: lightgreen; */
+    
     width: 45%;
 }
 
 .cadastro_coluna2 {
-    /* background-color: lightskyblue; */
+    
     width: 45%;
 }
 
@@ -116,7 +116,7 @@ header {
 }
 
 .box_cadastro label {
-    font-size: 50px;
+    font-size: 55px;
 
 }
 
@@ -131,14 +131,21 @@ header {
 
 .box_cadastro input[type="text"] {
     height: 40px;
-    width: 500px;
     margin-bottom: 20px;
     background-color: #dafff8;
     box-shadow: 0 4px 4px 2px #00000025;
 }
 
+.input_produtos{
+    width: 500px;
+}
+
 .categoria {
     width: 70%;
+}
+
+.input_categoria{
+    width: 373px;
 }
 
 .box_cadastro textarea {
@@ -148,7 +155,7 @@ header {
 }
 
 .container_cadastro input[type="button"] {
-    font-size: 26px;
+    font-size: 34px;
     margin: 50px 0;
     border-radius: 10px;
     border: none;
@@ -181,8 +188,8 @@ input[type="file"] {
     height: 40px;
     cursor: pointer;
     box-shadow: 0 4px 4px 2px #00000025;
+    flex-wrap
 }
-
 
 
 
@@ -192,7 +199,7 @@ input[type="file"] {
 /* LISTA */
 table {
     /* background-color: aquamarine; */
-
+    width: 90%;
     max-width: 1200px;
     text-align: center;
     border-collapse: collapse;
@@ -255,14 +262,19 @@ footer p {
 
 
 /* MEDIA */
-@media screen and (max-width: 1000px) {
-    table {
+@media screen and (max-width: 768px){
+    table{
         width: 98%;
-    }
+        display: flex;
+        flex-direction: column;
+    } 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px){
     .box_cadastro {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
         flex-direction: column;
     }
 
