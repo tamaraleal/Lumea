@@ -67,7 +67,7 @@ nav a {
 
 .banner {
     margin-top: 50px;
-    background-image: url(./assets/image\ 3.png);
+    background-image: url(./assets/image\ 2.png);
     width: 60%;
     aspect-ratio: 3.2;
     background-repeat: no-repeat;
@@ -87,12 +87,12 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 0;
+    margin: 130px 0;
     /* background-color: blueviolet; */
 }
 
 .titulo span {
-    font-size: 48px;
+    font-size: 70px;
     font-family: "Tangerine", cursive;
 }
 
@@ -128,6 +128,7 @@ nav a {
     background-color: #E6EFFA;
     border-radius: 30px;
     text-align: center;
+    font-family: "Bona Nova SC", serif;
 
     display: flex;
     flex-direction: column;
@@ -139,12 +140,11 @@ nav a {
     border: solid 2px #95BCEA;
 }
 
-.card img {
-    width: 60%;
-}
 
-.creme {
-    margin-top: 100px;
+.card img {
+    height: 245px;
+    width: 180px;
+    margin-top: 30px;
 }
 
 .card p {
@@ -152,12 +152,37 @@ nav a {
     width: 90%;
     font-family: "Raleway Dots", sans-serif;
     font-weight: 900;
+    padding-bottom: 50px;
 }
 
 .card h2 {
     font-family: "Bona Nova SC", serif;
+    padding-top: 30px;
 }
 
+.rimel {
+    height: 143.19px;
+    width: 65.57px;
+    margin-top: 30px;
+}
+
+
+
+/* RODAPÉ */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #95BCEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+}
 
 /* RODAPÉ */
 
@@ -213,3 +238,4 @@ footer p {
         display: none;
     }
 }
+
