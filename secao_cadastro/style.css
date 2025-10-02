@@ -145,7 +145,7 @@ header {
 }
 
 .input_categoria{
-    width: 373px;
+    width: 284px;
 }
 
 .box_cadastro textarea {
@@ -198,7 +198,6 @@ input[type="file"] {
 
 /* LISTA */
 table {
-    /* background-color: aquamarine; */
     width: 90%;
     max-width: 1200px;
     text-align: center;
