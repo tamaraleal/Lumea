@@ -94,12 +94,12 @@ header {
 }
 
 .cadastro_coluna1 {
-    
+
     width: 45%;
 }
 
 .cadastro_coluna2 {
-    
+
     width: 45%;
 }
 
@@ -136,16 +136,18 @@ header {
     box-shadow: 0 4px 4px 2px #00000025;
 }
 
-.input_produtos{
+.input_produtos {
     width: 500px;
 }
 
 .categoria {
     width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
-.input_categoria{
-    width: 284px;
+.input_categoria {
+    width: 500px;
 }
 
 .box_cadastro textarea {
@@ -168,6 +170,7 @@ header {
 
 .img {
     width: 20%;
+    margin-left: 120px;
 }
 
 .img svg {
@@ -261,15 +264,15 @@ footer p {
 
 
 /* MEDIA */
-@media screen and (max-width: 768px){
-    table{
+@media screen and (max-width: 768px) {
+    table {
         width: 98%;
         display: flex;
         flex-direction: column;
-    } 
+    }
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
     .box_cadastro {
         width: 90%;
         display: flex;
@@ -284,6 +287,7 @@ footer p {
 
     .container_cadastro input[type="button"] {
         padding: 10px 100px;
+        border: solid 1px #B3B3B3;
     }
 
     /* LISTA */
@@ -320,6 +324,11 @@ footer p {
         align-self: flex-end;
     }
 
+    .img {
+        width: 10%;
+
+    }
+
 }
 
 
@@ -327,3 +336,4 @@ footer p {
     background-color: #dafff8;
     border-radius: 15px;
 }
+
