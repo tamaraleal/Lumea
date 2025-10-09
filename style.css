@@ -8,6 +8,19 @@ body {
     background-color: #F8FBFF;
 }
 
+#sombra {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.65) 0%, rgba(149, 188, 234, 0.65) 100%);
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    /* right: -101vw; */
+    right: 0;
+    overflow-y: hidden;
+    transition: .5s;
+}
+
 header {
     background-color: #95BCEA;
     height: 120px;
@@ -211,25 +224,36 @@ footer p {
         display: none;
     }
 
-    nav a {
-        display: none;
+    .container_palavras {
+       position: absolute;
+       overflow-x: hidden;
+       right: -101vw;
+       padding: 20px;
+       background-color: #95BCEA;
+       flex-direction: column;
+       z-index: 2;
     }
 
+
+    .container_esquerda{
+        top: 100px;
+        gap: 5px;
+    }
+    
     .cab_col1 {
         display: flex;
         align-self: center;
     }
 
-    .menu {
+    .col_col3 {
         display: inline-block;
         width: 35px;
         margin-bottom: 40px;
+        z-index: 2;
     }
-}
 
-@media screen and (max-width: 650px) {
-    .banner {
-        width: 350px;
+    .menu{
+        display: block;
     }
 }
 
@@ -239,3 +263,8 @@ footer p {
     }
 }
 
+@media screen and (max-width: 650px) {
+    .banner {
+        width: 350px;
+    }
+}
